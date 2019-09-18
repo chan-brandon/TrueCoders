@@ -16,4 +16,12 @@ namespace TrueCoders
             Rank = rank;
         }
     }
+
+    public class Teams
+    {
+        public string TeamName { get; set; }
+        public string Members { get; set; }
+        public string Location { get; set; }
+        public string Colors { get; set; }
+    }
 }
