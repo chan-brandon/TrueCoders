@@ -63,12 +63,34 @@ namespace TrueCoders
 
             foreach (Teams team in teamList)
             {
-                Console.WriteLine($"{team.TeamName} has been invited to ESL Birmingham. " +
+                Console.WriteLine($"{team.TeamName} has been invited to ESL One Birmingham. " +
                     $"We all look forward to seeing {team.Members} compete at the higest " +
                     $"level in their class {team.Colors}. We have spoken to them and " +
                     $"they are all hoping to make {team.Location} proud! GO {team.TeamName}!");
                 Console.WriteLine("press return to continue...");
                 Console.ReadLine();
+            }
+
+            Casters bardolph = new Casters("Bardolph");
+            Casters ddk = new Casters("DDK");
+            Casters sadokist = new Casters("Sadokist");
+            Casters henryg = new Casters("HenryG");
+            Casters moses = new Casters("Creamy Moses");
+            Casters anders = new Casters("Anders");
+
+            var casterList = new List<Casters>();
+            casterList.Add(bardolph);
+            casterList.Add(ddk);
+            casterList.Add(sadokist);
+            casterList.Add(henryg);
+            casterList.Add(moses);
+            casterList.Add(anders);
+
+            {
+                Console.WriteLine($"ESL has brought in the best talent in the world for ESL One Birmingham. " +
+                $"We would like to announce that we have secured the services of duos {casterList[0].CasterName} + {casterList[1].CasterName}, " +
+                $"{casterList[2].CasterName} + {casterList[3].CasterName}, and {casterList[5].CasterName} + {casterList[4].CasterName}! " +
+                $"We look forward to bringing you the best teams as well as the best talent in the industry!");
             }
         }
     }

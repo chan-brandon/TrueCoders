@@ -24,4 +24,14 @@ namespace TrueCoders
         public string Location { get; set; }
         public string Colors { get; set; }
     }
+
+    public class Casters
+    {
+        public string CasterName { get; set; }
+
+        public Casters(string castname)
+        {
+            CasterName = castname;
+        }
+    }
 }
